@@ -4,7 +4,7 @@ import CardsContainer from "../containers/Home/CardsContainer"
 export default function Home() {
   return (
     <div>
-      <Dashboard menu={"users"}>
+      <Dashboard menu={"home"}>
         <CardsContainer />
       </Dashboard>
     </div>

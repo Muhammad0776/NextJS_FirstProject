@@ -1,11 +1,12 @@
 import React from 'react'
 import DashboardWrapper from './DashboardWrapper'
-import { Button, List, ListItem } from '@material-ui/core'
+import { List, ListItem } from '@material-ui/core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleMenu } from '../../redux/actions'
-import { faBars, faHome, faImages, faNewspaper, faTasks, faUsers, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faBahai, faBars, faHome, faImages, faNewspaper, faTasks, faUserFriends, faUsers, faVideo } from '@fortawesome/free-solid-svg-icons';
 import { Slide } from 'react-awesome-reveal'
+import { MdCall } from "react-icons/md";
 import Link from "next/link"
 
 const menus = [
@@ -25,9 +26,15 @@ const Dashboard = ({ children, menu }) => {
     return (
         <DashboardWrapper>
             <div className={`sidebar ${show && "show" || ""}`}>
-                <h1 className="text-white">Sidebar</h1>
-
-                <List component="nav">
+                <div className="d-flex justify-content-between">
+                    <img src="https://colorlib.com/polygon/cooladmin/images/icon/logo.png" alt="" />
+                    <div className="toggle" onClick={() => toggleMenu(dispatch)} variant="contained" disableElevation>
+                        <FontAwesomeIcon icon={faBahai} />
+                    </div>
+                </div>
+                <h2 className="text-white mt-3">Sidebar</h2>
+                <hr className="bg-light" />
+                <List className="mt-5" component="nav">
                     {menus.map((v, i) => <li>
                         <Slide delay={i * 30}>
                             <Link key={v.to} href={`${v.to}`}>
@@ -42,12 +49,15 @@ const Dashboard = ({ children, menu }) => {
                 </List>
             </div>
             <div className="rightside">
-                <header className="shadow">
-                    <Button onClick={() => toggleMenu(dispatch)} variant="contained" disableElevation
-                        className="me-3">
-                        <FontAwesomeIcon icon={faBars} />
-                    </Button>
-                    <img src="/vercel.svg" className="logo" alt="" />
+                <header className="d-flex justify-content-between border-bottom">
+                    <h3 className="md-title d-flex justify-content-center align-items-center ps-2">Dashboard</h3>
+                    <div className="text-end d-flex justify-content-center align-items-center">
+                        <input type="text" className="border-0 rounded border-bottom" placeholder="Search..." />
+                        <div className="others me-4"><MdCall /></div>
+                        <div className="others"><FontAwesomeIcon icon={faUserFriends} /></div>
+                        <a href="#" className="user me-2"><img src="https://colorlib.com/polygon/cooladmin/images/icon/avatar-01.jpg" alt="" /></a>
+                        <h5 className="text-muted me-2">John Doe</h5>
+                    </div>
                 </header>
                 <div className="content">
                     {children}
