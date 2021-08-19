@@ -1,14 +1,14 @@
-import Dashboard from "../containers/Dashboard"
-import UsersData from "../containers/Users"
+import Dashboard from "../containers/Dashboard";
+import UsersData from "../containers/Users";
 
 const Users = () => {
-    return (
-        <div>
-            <Dashboard menu={"users"}>
-                <Users />
-            </Dashboard>
-        </div>
-    )
-}
+  return (
+    <div>
+      <Dashboard menu={"users"}>
+        <UsersData />
+      </Dashboard>
+    </div>
+  );
+};
 
-export default Users
+export default Users;
