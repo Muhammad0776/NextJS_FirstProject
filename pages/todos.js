@@ -1,7 +1,7 @@
 import Dashboard from "../containers/Dashboard"
 import TodosData from "../containers/Todos/TodosData"
 
-const Users = () => {
+const Todos = () => {
     return (
         <div>
             <Dashboard menu={"todos"}>
@@ -11,4 +11,4 @@ const Users = () => {
     )
 }
 
-export default Users
+export default Todos
