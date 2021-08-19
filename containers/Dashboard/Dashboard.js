@@ -35,9 +35,9 @@ const Dashboard = ({ children, menu }) => {
                 <h2 className="text-white mt-3">Sidebar</h2>
                 <hr className="bg-light" />
                 <List className="mt-5" component="nav">
-                    {menus.map((v, i) => <li>
+                    {menus.map((v, i) => <li key={v.to}>
                         <Slide delay={i * 30}>
-                            <Link key={v.to} href={`${v.to}`}>
+                            <Link href={`${v.to}`}>
                                 <a className={`${menu === v.id ? "active" : ""}`}>
                                     <ListItem button >
                                         <FontAwesomeIcon icon={v.icon} className="me-2" /> {v.title}
