@@ -12,7 +12,7 @@ const CardsContainer = () => {
                 <div className="col-12 col-sm-6 col-md-3">
                     <Fade className="p-4 shadow cards card1 mb-4">
                         <div>
-                            <FontAwesomeIcon icon={faUsers} className="mb-3" />
+                            <FontAwesomeIcon icon={faUsers} className="mb-3 icons" />
                             <h2>Users</h2>
                         </div>
                     </Fade>
@@ -20,7 +20,7 @@ const CardsContainer = () => {
                 <div className="col-12 col-sm-6 col-md-3">
                     <Fade className="p-4 shadow cards card2 mb-4">
                         <div>
-                            <FontAwesomeIcon icon={faClipboard} className="mb-3" />
+                            <FontAwesomeIcon icon={faClipboard} className="mb-3 icons" />
                             <h2>Todos</h2>
                         </div>
                     </Fade>
@@ -28,7 +28,7 @@ const CardsContainer = () => {
                 <div className="col-12 col-sm-6 col-md-3">
                     <Fade className="p-4 shadow cards card3 mb-4">
                         <div>
-                            <FontAwesomeIcon icon={faFileVideo} className="mb-3" />
+                            <FontAwesomeIcon icon={faFileVideo} className="mb-3 icons" />
                             <h2>Albums</h2>
                         </div>
                     </Fade>
@@ -36,7 +36,7 @@ const CardsContainer = () => {
                 <div className="col-12 col-sm-6 col-md-3">
                     <Fade className="p-4 shadow cards card4 mb-4">
                         <div>
-                            <FontAwesomeIcon icon={faPhotoVideo} className="mb-3" />
+                            <FontAwesomeIcon icon={faPhotoVideo} className="mb-3 icons" />
                             <h2>Photos</h2>
                         </div>
                     </Fade>
@@ -44,7 +44,7 @@ const CardsContainer = () => {
                 <div className="col-12 col-sm-6 col-md-3">
                     <Fade className="p-4 shadow cards card5 mb-4">
                         <div>
-                            <FontAwesomeIcon icon={faPodcast} className="mb-3" />
+                            <FontAwesomeIcon icon={faPodcast} className="mb-3 icons" />
                             <h2>Posts</h2>
                         </div>
                     </Fade>

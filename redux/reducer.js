@@ -5,13 +5,13 @@ const reducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_TODOS: return { ...state, todos: action.payload };
 
-        case SET_ALBUMS: return { ...state, Albums: action.payload };
+        case SET_ALBUMS: return { ...state, albums: action.payload };
 
-        case SET_POSTS: return { ...state, Posts: action.payload };
+        case SET_POSTS: return { ...state, posts: action.payload };
 
-        case SET_PHOTOS: return { ...state, Photos: action.payload };
+        case SET_PHOTOS: return { ...state, photos: action.payload };
 
-        case SET_USERS: return { ...state, Photos: action.payload };
+        case SET_USERS: return { ...state, users: action.payload };
 
         case TOGGLE_MENU: return { ...state, isSidebarShow: !state.isSidebarShow }
 

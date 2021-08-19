@@ -38,6 +38,11 @@ const CardsContainerWrapper = styled.div`
 90deg
 ,#435656 0%,#dd23 100%);
 }
+
+.icons{
+    width: 60px;
+    height: 60px;
+}
 `;
 
 export default CardsContainerWrapper;
