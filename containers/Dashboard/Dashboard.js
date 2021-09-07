@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../../redux/actions";
 import {
   faBahai,
-  faBars,
   faHome,
   faImages,
   faNewspaper,
